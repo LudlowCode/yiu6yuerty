@@ -12,9 +12,14 @@ def pos_dec_to_binary(decimal,bit_list):
     
 #why does this not work? Fix it!
 def countdown(number):
-    print(number)
-    time.sleep(1)
-    countdown(number-1)
+    #base case
+    if number <= 0:
+        return
+    else:
+        #recursive case
+        print(number)
+        time.sleep(1)
+        countdown(number-1)
 
 
 #try to complete this
@@ -81,5 +86,7 @@ If p > q, the gcd of p and q is the same as the gcd of q and p % q."""
 #print("".join(str(i) for i in pos_dec_to_binary(1234,[])))
 #
 #print (factorial(4))
-#countdown(10)
+
+countdown(10)
+
 #print(binary_search_recursive([1,2,3,4,54,56,58],0,6,1))
